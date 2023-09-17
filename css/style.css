@@ -471,7 +471,7 @@ a {
 }
 .global-continer{
     display: inline-block;
-    width: 1200 px;
+    width: 1600px;
 }
 .header-container {
     display: flex;
@@ -481,6 +481,9 @@ a {
     align-items: center;
     padding-left: 13.4375%;
     padding-right: 13.4375%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ececec;
 }
 
 .webstudio-container {
@@ -538,7 +541,7 @@ a {
 }
 
 .global-header {
-    background-color: #ececec;
+    background-color: #fff;
     font-family: var(--heading-font-family);
     font-size: 14px;
     font-weight: 500;
@@ -607,18 +610,19 @@ a:focus {
 /*--buttun section second page--*/
 .main-container {
     display: grid;
-    width: 100%;
+    width: 1200px;
     justify-content: center;
     margin-top: 94px;
     margin-bottom: 94px;
     align-items: center; 
     align-content: center;
-      
+    padding-left: 13.4375%;
+    justify-items: center;
     }
 
 .button-section ul {
     list-style-type: none;
-    display: flex;
+    display: grid;
     grid-template-columns: 64px 120px 83px 96px 121px;
     grid-column-gap: 8px;
     width: 516px;
@@ -627,13 +631,9 @@ a:focus {
     justify-content: center;
     flex-basis: calc((100%-40px)/5);
     flex-wrap: nowrap;
-    padding-bottom: 50px;
-      
-
 }
  .button {
-    
-    background-color: #F5F4FA;
+        background-color: #F5F4FA;
         border: none;
         color: #212121;
         text-align: center;
@@ -667,13 +667,48 @@ a:focus {
 
 /*--image section second page--*/
 .image-class{
+    display: flex;
     list-style-type: none;
-    display:flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 100%;
-    
+    width: 1200px;
+    padding-top: 56px;
+    flex-basis: calc((100%-90px)/3)
+
+           
 }
+
+.image-class li{
+       flex-basis: calc((100%-90px)/3) ;
+       margin: 15px;
+        max-width: 100%;
+        height: auto;
+}
+.image-class div{
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-style: solid;
+    border-letf-width: 1px;
+    border-color: #eee;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+.image-class h3{
+   height:36px;
+   width: 322px;
+   justify-content: center;
+   align-content: center;
+   padding-top: 20px;
+}
+.image-class p{
+    height: 30px;
+    width: 322px;
+    padding-top: 4px;
+    padding-bottom: 20px;
+}
+
 
  .image-text {
     font-weight: 700;
@@ -694,18 +729,51 @@ a:focus {
 
 /*--footer second page--*/
 
+.footer-container {
+    display: flex;
+    width: 100%;
+
+}
+
+.footer-section {
+    display: bloc;
+    padding-left: 215px;
+    width: 1600px;
+    height: 251px;
+}
+
+.web-studio2 {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 28px;
+}
+
 .global-footer {
     background: #2F303A;
     text-align: left;
 
-
 }
 
- .text-whites {
+.text-whites {
     color: white;
 }
 
- .footer-address {
+
+.blue-text {
+    color: var(--link-hover-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26 px;
+}
+
+.white-text {
+    color: white;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26 px;
+}
+
+.footer-address {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 3%;
@@ -713,24 +781,15 @@ a:focus {
     font-family: var(--heading-font-family);
 }
 
- .blue-text {
-    color: var(--link-hover-color);
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26 px;
+.foot-address {
+    padding-bottom: 12px;
 }
 
- .white-text {
-    color: white;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26 px;
+.mail-class {
+    color: #fff;
 }
 
- .mail-class {
-    color: #fff
-}
-
- .tel-text {
-    color: #fff
+.tel-text {
+    color: #fff;
+    padding-top: 12px;
 }
