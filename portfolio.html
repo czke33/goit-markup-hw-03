@@ -10,56 +10,67 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="./css/style.css" />
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-   
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-    <header class="global-header">
-        <a class="link-class" href="./webstudio.html" >
-        <span class="text-blue">Web</span><span class="text-white">Studio</span></a>
-
-         <nav class="main-navigation">
+ <div class="global-container">
+        <header class="global-header">
+        <div class="header-container">
+                <div class="webstudio-container">
+                   <a class="link-class" href="./webstudio.html" >
+                   <span class="text-blue">Web</span>
+                   <span class="text-white">Studio</span></a>
+                </div>
+          <div class="navigation-container">
+            <nav class="main-navigation">
             <ul class="list-class">
                 <li><a href="./index.html" class="nav-link">Studio</a></li>
                 <li><a href="./portfolio.html" class="nav-link current">Portfolio</a></li>
                 <li><a href="./contacts.html" class="nav-link">Contacts</a></li>
             </ul>
-        
-        <ul class="contact">
-         <li><a class="mail-class" href="mailto:info@devstudio.com">
-            info@devstudio.com</a></li>
-        <li><a class="tel-class" href="tel:+12127724150">
-            +1 212-772-4150</a></li>
-        </ul>
+        </div>
+
+            <div class="contact-container">
+              <ul class="contact">
+              <li><a class="mail-class" href="mailto:info@devstudio.com">
+                 info@devstudio.com</a></li>
+              <li><a class="tel-class" href="tel:+12127724150">
+                 +1 212-772-4150</a></li>
+            </ul>
+            </div>
         </nav>
+     </div>
     </header>
-     <main>
+
+
+<main class="main-container">
         <!--button section-->
-<section class="button-section">
-     <ul class="button-class">
+       <section class="button-section">
+        <ul class="button-class">
         <li>
-        <button class="button" type="button">All</button>
+        <button class="button one" type="button">All</button>
       </li>
       <li>
-        <button class="button" type="button">Web-sites</button>
+        <button class="button two" type="button">Web-sites</button>
       </li>
-    <li>
-        <button class="button" type="button">Apps</button>
-    </li>
-    <li>
-        <button class="button" type="button">Design</button>
-    </li>
-    <li>
-        <button class="button" type="button">Marketing</button>
-    </li>
+        <li>
+        <button class="button three" type="button">Apps</button>
+      </li>
+       <li>
+        <button class="button four" type="button">Design</button>
+       </li>
+       <li>
+        <button class="button five" type="button">Marketing</button>
+        </li>
     
-     </ul>
-</section>
+        </ul>
+            </section>
 <!--images section-->
-<section class="image-section">
-    <ul class="image-class">
+     <section class="image-section">
+       <ul class="image-class">
         <li>
             <img src="./images/img1.jpg" alt="Technoduck" width="370" height="294" />
         
@@ -114,8 +125,8 @@
             <h3 class="image-text">Growing Business</h3>
             <p class="description-text">Apps</p>
         </li>
-    </ul>
-</section>
+             </ul>
+        </section>
     </main>
     <footer class="global-footer">
         <section class="footer-section">
@@ -131,6 +142,7 @@
     
         </section>
     </footer>
+  </div>
  </body>
 </html>
 

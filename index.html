@@ -12,15 +12,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet" />
-        <link rel="stylesheet" href="./css/style.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
 
     <body>
-
-        <header class="global-header">
-        <div class="header-container">
+        <div class="global-container">
+          <header class="global-header">
+            <div class="header-container">
             <div class="webstudio-container">
               <a class="link-class" href="./webstudio.html">
                <span class="text-blue">Web</span>
@@ -29,7 +29,7 @@
             <div class="navigation-container">
                 <nav class="main-navigation">
                     <ul class="list-class">
-                        <li><a href="./index.html" class="nav-link" aria-current="true">Studio</a></li>
+                        <li><a href="./index.html" class="nav-link current">Studio</a></li>
                         <li><a href="./portfolio.html" class="nav-link">Portfolio</a></li>
                         <li><a href="./contacts.html" class="nav-link">Contacts</a></li>
                      </ul>
@@ -46,6 +46,9 @@
             </nav>
         </div>
         </header>
+
+
+        
     <main class="main-container">
      <section class="first-section">
         <div class="first-section-container">
@@ -134,7 +137,7 @@
             <span class="white-text">Studio</span>
             </div>
             <address class="footer-address">
-                695 Park Ave, NY 10065, USA<br>
+              <div class="foot-address">695 Park Ave, NY 10065, USA</div>
                 <p class="mail-text">
                     info@devstudio.com</p>
                 <p class="tel-text">+1 212-772-4150</p>
@@ -144,5 +147,6 @@
         </section>
         </div>
      </footer>
+    </div>
      </body>
 </html>
