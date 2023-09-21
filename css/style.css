@@ -87,29 +87,31 @@ a {
         .text-white {
             color: #000000;
         }
+
+   
     
 .global-header {
     background-color: #ececec;
     font-family: var(--heading-font-family);
     font-size: 14px;
     font-weight: 500;
-
-
+}
 
 
 /*--Link section first page--*/
 
- .list-class {
+ .nav-link {
     list-style-type: none;
     color: #212121;
+    text-decoration: none;
     
 }
+ .current {
+       color: var(--link-hover-color);
+   }
 
  a:link,
- a:visited {
-    color: rgba(33, 33, 33, 1);
-    text-decoration: none;
-}
+ 
  a:hover {
     color: var(--link-hover-color);
 }
@@ -117,20 +119,20 @@ a {
     color: var(--link-hover-color);
 }
 
- .list-class { 
+ .nav-link { 
     cursor:poiter;
 }
+
 
 /*--Contact first page--*/
  .contact {
     list-style-type: none;
+    color: #212121;
+    text-decoration: none;
     }
 
 .contact a:link,
-.contact a:visited{
-    color:#212121;
-    text-decoration: none;
-}
+
  .contact a:hover {
     color: var(--link-hover-color);
     
@@ -142,11 +144,9 @@ a {
     color: var(--link-hover-color);
 }
 
- }
 
-.current {
-     color: var(--link-hover-color);
- }
+
+
 /*--first section first page--*/
 
 .first-section{
@@ -155,9 +155,8 @@ a {
     
 }
 .first-section-container {
-    display:block;
+    display:inline-block;
     width: 1600px;
-    height: 600px;
     margin: 0%;
     padding: 200px 452px 280px 452px;
     
@@ -165,10 +164,8 @@ a {
 }
 .head-text{
     width: 646px;
-    padding-bottom: 30px;
-    
-
-    }
+    padding-bottom: 30px; 
+   }
 .first-section .head-text {
     font-weight: 900;
     font-size: 44px;
@@ -550,27 +547,25 @@ a {
     font-weight: 500;
 }
 
-.current {
-    color: var(--link-hover-color);
-}
+
 
 
 
 /*--Link section second page--*/
 
-.list-class {
+.nav-link {
     list-style-type: none;
     color: #212121;
+    text-decoration: none;
 
+}
+
+.current {
+    color: var(--link-hover-color);
 }
 
 
 a:link,
-a:visited {
-    color: rgba(33, 33, 33, 1);
-    text-decoration: none;
-}
-
 a:hover {
     color: var(--link-hover-color);
 }
@@ -579,7 +574,7 @@ a:focus {
     color: var(--link-hover-color);
 }
 
-.list-class {
+.nav-link {
     cursor: poiter;
 }
 
@@ -611,7 +606,7 @@ a:focus {
 
 
 /*--buttun section second page--*/
-.main-container {
+.main-container2 {
     display: grid;
     width: 1200px;
     justify-content: center;
