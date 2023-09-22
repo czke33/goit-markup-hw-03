@@ -34,64 +34,78 @@ a {
     max-width: 100%;
     height: 80px;
     align-items: center;
-      }  
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-color: #ececec;
+    flex-wrap: nowrap;
+
+}
 
 .webstudio-container {
     display: flex;
     width: 100%;
     flex-direction: row;
-    justify-content: space-between;
     padding-left: 13.4375%;
-    
-}
+    flex-wrap: nowrap;
+    justify-content: space-between;
 
-       
+}
 .link-class {
-    display: flex;
+    display:flex;
     width: 100%;
-        
 }
 
-.navigation-container ul{
+
+
+.navigation-container ul {
     display: flex;
-    width: 500px;
-    justify-content: flex-start;
+    max-width: min-content;
     flex-direction: row;
     align-content: center;
     padding-left: 93px;
+
+}
+
+.navigation-container li {
+    padding-right: 50px;
 }
 
 
 .contact-container ul {
     display: flex;
-    justify-content: space-evenly;
-    width: 400px;
+    justify-content: right;
     align-content: center;
+    padding-inline-start: 376px;
+    width: max-content;
+
 
 }
 
-
+.tel-class {
+    padding-left: 40px;
+}
 
 .link-class {
-    font-family: 'Raleway',sans-serif;
-    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
     font-size: 26 px;
     text-decoration: none;
 }
-    .text-blue {
-            color: var(--link-hover-color);
-            font-size: 26px;
-        }
-    
-        .text-white {
-            color: #000000;
-            font-size: 26px;
-        }
 
-   
-    
+.text-blue {
+    color: var(--link-hover-color);
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.text-white {
+    color: #000000;
+    font-weight: 700;
+    font-size: 26px;
+}
+
 .global-header {
-    background-color: #ececec;
+    background-color: #fff;
     font-family: var(--heading-font-family);
     font-size: 14px;
     font-weight: 500;
@@ -477,7 +491,7 @@ a {
 .header-container {
     display: flex;
     flex-direction: row;
-    max-width: 100%;
+    max-width: 1600px;
     height: 80px;
     align-items: center;
     border-style: solid;
@@ -491,27 +505,32 @@ a {
     display: flex;
     max-width:min-content;
     flex-direction: row;
-    justify-content: space-between;
-    }
+    
+}
 
 
 
 .navigation-container2 ul{
     display: flex;
-    width: 500px;
-    justify-content: space-evenly;
+    max-width:min-content;
     flex-direction: row;
     align-content: center;
     padding-left: 93px;
     
 }
+.navigation-container2 li{
+    padding-right: 50px;
+}
 
 
 .contact-container ul{
     display: flex;
-    justify-content: flex-end;
+    justify-content:right ;
     align-content: center;
+    padding-inline-start: 376px;
+    width: max-content;
     
+        
 }
 .tel-class{
         padding-left: 40px;
